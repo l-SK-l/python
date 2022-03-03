@@ -78,3 +78,27 @@ if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
     print('YES')
 else:
     print('NO')
+
+# Даны три целых числа. Выведите значение наименьшего из них. 
+a = int(input())
+b = int(input())
+c = int(input())
+if a < b and a < c:
+    print(a)
+elif b < a and b < c:
+    print(b)
+else:
+    print(c)
+
+# Даны три целых числа. Определите, сколько среди них совпадающих. 
+# Программа должна вывести одно из чисел: 
+# 3 (если все совпадают), 2 (если два совпадает) или 0 (если все числа различны). 
+a = int(input())
+b = int(input())
+c = int(input())
+if (a == b == c):
+    print(3)
+elif (a == b != c) or (a == c != b) or (c == b != a):
+    print(2)
+else:
+    print(0)
